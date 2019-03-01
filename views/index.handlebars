@@ -3,7 +3,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> cats/cat-block devoured=false}}
+      {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -11,7 +11,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> cats/cat-block devoured=true}}
+      {{> burgers/burger-block devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
@@ -26,15 +26,3 @@
 
   <button type="submit">Add Burger</button>
 </form>
-
-
-{{!-- From cat-block --}}
-{{!-- <li>
-	{{name}}
-
-	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
-	</button>
-
-	<button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
-</li> --}}
