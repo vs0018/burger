@@ -1,10 +1,10 @@
 * {
 box-sizing: border-box;
-border-style: solid;
+/* border-style: solid; */
 margin: 5px
 }
 
-h1 {
+h1, h2 {
 text-align: center
 }
 
@@ -17,20 +17,30 @@ width: 10%
 }
 
 .burgerDiv {
-/* overflow: auto; */
 display: flex;
 justify-content: center;
 }
 
-/* .uneaten {
-float: left;
-}
-
 .eaten {
 color: grey;
-float: right;
-} */
+margin: 10px
+}
+
+.uneaten {
+margin: 10px
+}
 
 .formDiv {
 clear: left
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.form-group {
+display: flex;
+justify-content: center;
 }
