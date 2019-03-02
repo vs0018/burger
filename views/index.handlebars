@@ -1,5 +1,9 @@
 <h1>Eat-Da-Burger!</h1>
 
+<div class="burgerImg">
+  <img src="/assets/img/free-hamburger-icon-25.jpg">
+</div>
+
 <div class="burgerDiv">
   <ul class="uneaten">
     {{#each burgers}}
@@ -8,7 +12,7 @@
       {{/unless}}
     {{/each}}
   </ul>
-<br>
+
   <ul class="eaten">
     {{#each burgers}}
       {{#if devoured}}
@@ -18,8 +22,6 @@
   </ul>
 </div>
 
-<br>
-
 <div class="formDiv">
   <h2>Add a Burger</h2>
     <form class="create-form">
@@ -27,8 +29,7 @@
       <div class="form-group">
         <label for="ca">Burger Name:</label>
         <input type="text" id="ca" name="name">
+        <button type="submit">Add Burger</button>
       </div>
-
-      <button type="submit">Add Burger</button>
     </form>
 </div>

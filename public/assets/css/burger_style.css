@@ -1,24 +1,36 @@
 * {
 box-sizing: border-box;
+border-style: solid;
+margin: 5px
 }
 
 h1 {
 text-align: center
 }
 
-.burgerDiv {
-float: left
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 10%;
+width: 10%
 }
 
-.uneaten {
-float: left
+.burgerDiv {
+/* overflow: auto; */
+display: flex;
+justify-content: center;
+}
+
+/* .uneaten {
+float: left;
 }
 
 .eaten {
-float: left;
-color: grey
-}
+color: grey;
+float: right;
+} */
 
 .formDiv {
-float: left
+clear: left
 }
